@@ -12,9 +12,7 @@ pipeline{
 		stage('Deploy'){
 			steps{
 				echo 'Deploying...'
-				stage('Deploy'){
-      steps{
-        sshPublisher(
+				sshPublisher(
               publishers: 
               [sshPublisherDesc(
                   configName: 'Linux for Jenkins Test', 
@@ -41,8 +39,6 @@ pipeline{
               )
               ]
           )
-      }
-    }
 			}
 		}
 	}
