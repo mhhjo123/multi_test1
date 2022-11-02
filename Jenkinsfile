@@ -21,7 +21,8 @@ pipeline{
                       cleanRemote: false, 
                       excludes: '', 
                       execCommand: '''echo cd jenkins_test2/src > /root/jenkins_test2/master2_result.txt
-                                      cd jenkins_test2/src >> /root/jenkins_test2/master2_result.txt
+                                      cd jenkins_test2/src 
+                                      pwd >> /root/jenkins_test2/master2_result.txt
                                       echo HelloWorld.class execute >> /root/jenkins_test2/master2_result.txt
                                       java HelloWorld >> /root/jenkins_test2/master2_result.txt''', 
                       execTimeout: 120000, 
