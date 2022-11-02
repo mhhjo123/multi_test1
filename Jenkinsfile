@@ -15,7 +15,7 @@ pipeline{
 				sshPublisher(
               publishers: 
               [sshPublisherDesc(
-                  configName: 'Linux for Jenkins Test', 
+                  configName: 'Linux for Jenkins Multi Test', 
                   transfers: 
                   [sshTransfer(
                       cleanRemote: false, 
